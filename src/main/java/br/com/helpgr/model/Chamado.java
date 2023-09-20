@@ -12,12 +12,12 @@ public class Chamado extends PanacheMongoEntity {
     public String clienteEmail;
     private String atendenteEmail;
 
-    private String status; // Adicione este campo para representar o status do chamado
+    private String status; 
 
-    private String solucao; // Adicione este campo para representar o status do chamado
+    private String solucao; 
 
-    private LocalDate dataAbertura; // Adicione este campo para a data de abertura
-    private LocalDate dataEncerrado; // Adicione este campo para a data encerrado
+    private LocalDate dataAbertura; 
+    private LocalDate dataEncerrado;
 
     public String getStatus() {
         return status;
