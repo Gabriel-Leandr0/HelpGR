@@ -77,6 +77,6 @@ public class Create {
         chamado.setDataAbertura(LocalDate.now());
 
         chamadoRepository.persist(chamado);
-        return Response.created(new URI("/" + chamado.id)).build();
+        return Response.created(new URI("/" + chamado.id)).entity("Chamado criado!").build();
     }
 }

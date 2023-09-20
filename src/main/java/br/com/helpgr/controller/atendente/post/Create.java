@@ -48,6 +48,8 @@ public class Create {
 
     public Response create(Atendente atendente) throws URISyntaxException {
         atendenteRepository.persist(atendente);
-        return Response.created(new URI("/" + atendente.id)).build();
+
+
+        return Response.created(new URI("/" + atendente.id)).entity("Atendente criado!").build();
     }
 }

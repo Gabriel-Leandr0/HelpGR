@@ -52,7 +52,7 @@ public class Create {
     )
     public Response create(Cliente cliente) throws URISyntaxException {
         clienteRepository.persist(cliente);
-        return Response.created(new URI("/" + cliente.id)).build();
+        return Response.created(new URI("/" + cliente.id)).entity("Cliente criado!").build();
     }
 
 }
