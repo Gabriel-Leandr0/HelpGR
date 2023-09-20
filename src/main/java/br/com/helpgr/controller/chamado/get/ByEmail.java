@@ -10,6 +10,14 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.enums.ParameterIn;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +35,34 @@ public class ByEmail {
 
     @GET
     @Path("/{email}")
+    @Tag(name = "Chamados", description = "Gerencie os chamados da sua aplicação.")
+    @Operation(
+            summary = "Buscar Chamados por Email",
+            description = "Recupere uma lista de chamados associados a um cliente ou atendente com base no endereço de e-mail."
+    )
+    @Parameter(
+            name = "email",
+            in = ParameterIn.PATH,
+            required = true,
+            description = "Endereço de e-mail do cliente ou atendente."
+    )
+    @APIResponse(
+            responseCode = "200",
+            description = "Chamados encontrados com sucesso.",
+            content = @Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = Chamado.class)
+            )
+    )
+    @APIResponse(
+            responseCode = "404",
+            description = "Nenhum chamado encontrado",
+            content = @Content(
+                    mediaType = "text/plain",
+                    schema = @Schema(implementation = String.class)
+            )
+    )
+
     public Response byEmail(@PathParam("email") String email) {
 
         Cliente cliente = clienteRepository.findByEmail(email);

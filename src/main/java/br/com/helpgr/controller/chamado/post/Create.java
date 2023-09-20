@@ -11,6 +11,13 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDate;
@@ -26,6 +33,35 @@ public class Create {
     ClienteRepository clienteRepository;
 
     @POST
+    @Tag(name = "Chamados", description = "Gerencie os chamados da sua aplicação.")
+    @Operation(
+            summary = "Criar Chamado",
+            description = "Crie um novo chamado com base nas informações fornecidas."
+    )
+    @RequestBody(
+            description = "Informações do chamado a ser criado.",
+            content = @Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = Chamado.class)
+            )
+    )
+    @APIResponse(
+            responseCode = "201",
+            description = "Chamado criado com sucesso.",
+            content = @Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = Chamado.class)
+            )
+    )
+    @APIResponse(
+            responseCode = "404",
+            description = "Cliente não encontrado",
+            content = @Content(
+                    mediaType = "text/plain",
+                    schema = @Schema(implementation = String.class)
+            )
+    )
+
     public Response create(Chamado chamado) throws URISyntaxException {
         // Verifique se o cliente associado existe pelo email
         if (chamado.clienteEmail != null) {
