@@ -1,7 +1,7 @@
 package br.com.helpgr.controller.cliente.get;
 
 import br.com.helpgr.model.Atendente;
-import br.com.helpgr.repositore.ClienteRepository;
+import br.com.helpgr.repository.ClienteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;

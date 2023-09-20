@@ -2,8 +2,8 @@ package br.com.helpgr.controller.chamado.post;
 
 import br.com.helpgr.model.Chamado;
 import br.com.helpgr.model.Cliente;
-import br.com.helpgr.repositore.ChamadoRepository;
-import br.com.helpgr.repositore.ClienteRepository;
+import br.com.helpgr.repository.ChamadoRepository;
+import br.com.helpgr.repository.ClienteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;

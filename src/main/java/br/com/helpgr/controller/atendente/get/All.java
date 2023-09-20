@@ -1,7 +1,7 @@
 package br.com.helpgr.controller.atendente.get;
 
 import br.com.helpgr.model.Atendente;
-import br.com.helpgr.repositore.AtendenteRepository;
+import br.com.helpgr.repository.AtendenteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
@@ -15,8 +15,6 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-
-import java.util.List;
 
 @Path("/atendente")
 @Consumes(MediaType.APPLICATION_JSON)

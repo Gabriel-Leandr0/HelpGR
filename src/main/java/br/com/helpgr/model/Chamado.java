@@ -65,5 +65,3 @@ public class Chamado extends PanacheMongoEntity {
     }
 }
 
-   // public String atendenteEmail;
-

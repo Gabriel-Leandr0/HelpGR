@@ -2,7 +2,7 @@ package br.com.helpgr.controller.cliente.put;
 
 import br.com.helpgr.model.Atendente;
 import br.com.helpgr.model.Cliente;
-import br.com.helpgr.repositore.ClienteRepository;
+import br.com.helpgr.repository.ClienteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

@@ -1,4 +1,4 @@
-package br.com.helpgr.repositore;
+package br.com.helpgr.repository;
 
 import br.com.helpgr.model.Chamado;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;

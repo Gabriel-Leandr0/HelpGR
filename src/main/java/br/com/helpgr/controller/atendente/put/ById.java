@@ -1,12 +1,11 @@
 package br.com.helpgr.controller.atendente.put;
 
 import br.com.helpgr.model.Atendente;
-import br.com.helpgr.repositore.AtendenteRepository;
+import br.com.helpgr.repository.AtendenteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.core.Response.Status;
 import org.bson.types.ObjectId;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;

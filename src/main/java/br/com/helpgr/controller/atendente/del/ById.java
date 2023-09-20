@@ -1,7 +1,7 @@
 package br.com.helpgr.controller.atendente.del;
 
 import br.com.helpgr.model.Atendente;
-import br.com.helpgr.repositore.AtendenteRepository;
+import br.com.helpgr.repository.AtendenteRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

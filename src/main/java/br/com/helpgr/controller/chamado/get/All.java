@@ -1,7 +1,7 @@
 package br.com.helpgr.controller.chamado.get;
 
 import br.com.helpgr.model.Atendente;
-import br.com.helpgr.repositore.ChamadoRepository;
+import br.com.helpgr.repository.ChamadoRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
