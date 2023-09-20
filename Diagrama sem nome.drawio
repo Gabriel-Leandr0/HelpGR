@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-20T17:42:16.481Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="F3ESEgPzuN9t9qJaX51U" version="21.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-20T17:43:52.994Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="esBBUYMiDgqpZvmMhr7n" version="21.8.0" type="github">
   <diagram name="Página-1" id="t4cwPOpe5N0HpnnbIakR">
-    <mxGraphModel dx="3591" dy="873" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#000000" math="0" shadow="0">
+    <mxGraphModel dx="2571" dy="505" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#000000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,7 +44,7 @@
         <mxCell id="SZ_3P_ArL8m-mg5wEIIs-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="SZ_3P_ArL8m-mg5wEIIs-13" target="SZ_3P_ArL8m-mg5wEIIs-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SZ_3P_ArL8m-mg5wEIIs-13" value="Cliente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;fillColor=#4184b8;strokeColor=#EEEEEE;fontColor=#FFFFFF;rounded=0;" parent="1" vertex="1">
+        <mxCell id="SZ_3P_ArL8m-mg5wEIIs-13" value="Atendente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;fillColor=#4184b8;strokeColor=#EEEEEE;fontColor=#FFFFFF;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-978" y="271" width="50" height="90" as="geometry" />
         </mxCell>
         <mxCell id="SZ_3P_ArL8m-mg5wEIIs-23" value="Tela de Login" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#4184b8;strokeColor=#EEEEEE;fontColor=#FFFFFF;" parent="1" vertex="1">
