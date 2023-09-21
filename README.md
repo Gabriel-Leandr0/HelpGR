@@ -48,6 +48,9 @@ Este projeto é um passo inicial para o gerenciamento de chamados, mas ainda há
 - Implementação de testes automatizados para garantir a robustez da aplicação.
 - Este projeto serve como base para aprimoramentos futuros e para demonstrar o uso de tecnologias como Quarkus e MongoDB no contexto de gerenciamento de chamados.
 
+
+# Quarkus
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
