@@ -28,7 +28,6 @@ A API de chamados foi desenvolvida para oferecer as seguintes funcionalidades:
 
 ## Rotas 
 A documentação completa das rotas da API pode ser encontrada na interface do Swagger. Para acessar a documentação, basta rodar o projeto localmente e acessar o seguinte endereço: [http://localhost:8080/swagger-ui/](http://localhost:8080/q/swagger-ui/).
-Porém segue uma imagem com todas as rotas da aplicação, para mais detalhes será necessário acessar o link citado acima.
 
 ## UserFlow
 
