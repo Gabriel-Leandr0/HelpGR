@@ -3,7 +3,7 @@
 ## Objetivo
 Este projeto foi desenvolvido com o objetivo de criar uma API para gerenciamento de chamados, permitindo que clientes possam registrar solicitações de suporte ou atendimento técnico, além de possibilitar aos atendentes a gestão desses chamados.
 
-## Tecnologias Utilizadas
+## Ferramentas Utilizadas
 - Java
 - Quarkus
 - MongoDB
