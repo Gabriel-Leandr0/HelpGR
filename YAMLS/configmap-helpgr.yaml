@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: configmap-helpgr
 data:
-  MONGO_INITDB_ROOT_USERNAME: admin
-  MONGO_INITDB_ROOT_PASSWORD: abc123
+  MONGO_INITDB_ROOT_USERNAME: "" 
+  MONGO_INITDB_ROOT_PASSWORD: ""
