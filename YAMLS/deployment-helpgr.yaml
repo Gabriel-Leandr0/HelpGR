@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-helpgr
+spec:
+  template:
+    metadata:
+      name: helpgr
+      labels:
+        app: helpgr
+    spec:
+      containers:
+        - name: helpgr-container
+          image: gabrielmgr/helpgr:1.0
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: configmap-helpgr
+  selector:
+    matchLabels:
+      app: helpgr
