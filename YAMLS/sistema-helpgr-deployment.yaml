@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sistema-helpgr-deployment
+spec:
+#  replicas: 1
+  template:
+    metadata:
+      name: sistema-helpgr
+      labels:
+        app: sistema-helpgr
+    spec:
+      containers:
+        - name: sistema-helpgr-container
+          image: gabrielmgr/helpgr:1.2.4
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: sistema-configmap
+  selector:
+    matchLabels:
+      app: sistema-helpgr

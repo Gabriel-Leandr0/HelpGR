@@ -1,0 +1,11 @@
+ORDEM SUBIR APPLICACAO:
+
+BANCO:
+kubectl apply -f ./db-configmap.yaml
+kubectl apply -f ./db-helpgr-deployment.yaml
+kubectl apply -f ./svc-db-helpgr.yaml
+
+QUARKUS:
+kubectl apply -f ./sistema-configmap.yaml
+kubectl apply -f ./sistema-helpgr-deployment.yaml
+kubectl apply -f ./svc-sistema.yaml
