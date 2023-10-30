@@ -1,0 +1,5 @@
+docker build -f src/main/docker/Dockerfile.jvm -t gabrielmgr/helpgr:1.0 .
+
+docker run --name db-helpgr --network rede-gr -p 27017:27017 mongo
+
+docker run --name helpgr --network rede-gr -p 8080:8080 gabrielmgr/helpgr:1.0

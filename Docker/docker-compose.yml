@@ -1,0 +1,28 @@
+version: "3.7"
+
+networks:
+  kong-net:
+    name: kong-net
+    driver: bridge
+
+services:
+
+  db-helpgr:
+    image: mongo:latest
+    environment:
+      PORT: ":27017"
+    networks:
+      - kong-net
+    ports:
+      - 27017:27017
+
+  sistema-helpgr:
+    image: gabrielmgr/helpgr:1.0
+    environment:
+      PORT: ":8080"
+    depends_on:
+    - db-helpgr
+    networks:
+      - kong-net
+    ports:
+      - 8080:8080

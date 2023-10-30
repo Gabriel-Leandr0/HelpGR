@@ -1,0 +1,21 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongRoute
+metadata:
+  name: sistema-helpgr-route
+config:
+  paths:
+    - /teste
+  methods:
+    - GET
+  strip_path: false
+  preserve_host: false
+  protocols:
+    - http
+    - https
+  regex_priority: 0
+  strip_querystring: false
+  https_redirect_status_code: 426
+  hosts:
+    - localhost
+service:
+  name: kong-svc-sistema-helpgr

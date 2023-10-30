@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: sistema-helpgr
+  url: http://localhost:8080
+  routes:
+  - name: user-routes
+    paths:
+    - /user-service
+    
+- name: widget-service
+  url: http://widgets-service:5001
+  routes:
+  - name: widget-routes
+    paths:
+    - /widget-service

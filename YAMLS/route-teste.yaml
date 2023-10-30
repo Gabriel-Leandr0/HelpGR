@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minha-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /minha-rota
+        pathType: Prefix
+        backend:
+          service:
+            name: meu-servico-teste
+            port:
+              number: 80
